@@ -8,3 +8,5 @@ Feel free to contact me
 - http://facebook.com/rizal.asrul
 - Email: rizal.asrul@live.com
 - Instagram: @rizalasrul
+
+Inspired by: http://github.com/BosNaufal
