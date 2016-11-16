@@ -59,7 +59,7 @@ angularMiniShopApp.config(function($routeProvider)
     "        	<p>{{ product.description }}</p>"+
     "        	<div>"+
     "            	<h5 class='place-left'>{{ product.price * product.buy | currency: 'IDR ' }}</h5>"+
-    "            	<h5 class='place-right'><b>Stock:</b> {{ product.stock }} pcs</h5>"+
+    "            	<h5 class='place-right'><b>Buy:</b> {{ product.buy }} pcs</h5>"+
     "        	</div>"+
     "    	</div>"+
     "	</div>"+
