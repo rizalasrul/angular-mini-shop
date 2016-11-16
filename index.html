@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Angular Mini Shop | Mini Online Shop Built With Anguler JS + MetroUI CSS</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+
+        <meta name="description" content="Mini Online Shop Built With Angular JS + Metro UI By rizalasrul">
+        <meta name="keywords" content="angular js, metroui css, shop, angular app, metroui app, angular example, metroui example, javascript, css, app, frontend app, angular plugin, shopping online, online shop, minimalis, clean code, unique design">
+        <meta name="robots" content="index, follow">
+        <meta name="DC.title" content="Angular Mini Shop | Mini Online Shop Built With Angular JS">
+
+        <meta property="og:url" content="">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Angular Mini Shop | Mini Online Shop Built With Angular JS + Metro UI">
+        <meta property="og:description" content="Mini Online Shop Built With Angular JS By rizalasrul">
+        <meta property="og:image" content="">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:creator" content="@asrulole">
+        <meta name="twitter:site" content="@asrulole">
+        <meta name="twitter:title" content="Angular Mini Shop | Mini Online Shop Built With Angular JS + Metro UI">
+        <meta name="twitter:description" content="Mini Online Shop Built With Vue JS By rizalasrul">
+        <meta name="twitter:image" content="http://bosnaufal.github.io/vue-mini-shop/assets/img/share.png">
+
+        <link rel="canonical" href="http://rizalasrul.github.io/angular-mini-shop/">
+        <link rel="author" href="https://github.com/rizalasrul" />
+        <link rel="publisher" href="https://github.com/rizalasrul" />
+
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro.min.css">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro-responsive.min.css">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro-schemes.min.css">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro-rtl.min.css">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro-icons.min.css">
+
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="js/metro.min.js"></script>
+        <script src="js/angular.min.js"></script>
+        <script src="js/angular-route.js"></script>        
+        <script src="js/main.js"></script>
+        <script src="js/product-controller.js"></script>
+    </head>
+    <body style="background-color: #f0efef" data-ng-app="angularMiniShop" data-ng-controller="productCtrl">
+        <header class="app-bar red" style="box-shadow: 0px 0px 2px #888888; position: fixed; top: 0; z-index: 1000">
+            <div class="container">
+                <a class="app-bar-element" href="#/">Angular Mini-shop</a>
+                <span class="app-bar-divider"></span>
+                <ul class="app-bar-menu place-right">
+                    <li>
+                        <div class="input-control text">
+                            <input type="text" placeholder="Search..." data-ng-model="query">
+                        </div>
+                    </li>
+                    <li><a href="#cart"><span class="mif-tags icon"></span> Cart</a></li>
+                    <li>
+                        <a class="dropdown-toggle"><span class="mif-cart icon"></span> Category</a>
+                        <ul class="d-menu" data-role="dropdown">
+                            <li><a href="#category" data-ng-click="queryObj.category='Phone'">Phone</a></li>
+                            <li><a href="#category" data-ng-click="queryObj.category='Accessory'">Accessory</a></li>
+                            <li><a href="#category" data-ng-click="queryObj.category='iPad'">Pad</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <section class="container" style="margin-top: 75px" ng-view>
+            
+        </section>
+        <footer class="bg-black" style="padding-bottom: 15px">
+            <div class="container" style="padding-top: 10px">
+                <center><h5 class="fg-white">&copy; by <a href="http://github.com/rizalasrul" target="_blank">rizalasrul</a></h5></center>
+            </div>
+        </footer>
+    </body>
+</html>
